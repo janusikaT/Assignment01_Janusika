@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <script src="signup.js"> </script>
+  </head>
+  <body>
+    <!-- navbar start-->
+    <nav class="navbar navbar-default" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="brand" href="/">ShowTrackr</a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html"  id="nav">Home</a></li>
+            <li class="dropdown"><a href="add.html" id="nav">Add </a>  </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html"  id="active">Login</a></li>
+            <li><a href="signform.html" id="nav">Signup</a></li>
+          </ul>
+      </div>
+    </nav>
+      <!-- navbar end -->
+      <!-- box start -->
+        <div class="container center">
+          <div id="loginbox" class="panel panel-default ">
+            <h2 class="panel-body bold">Log in</h2>
+
+            <div class="">
+
+      <form id="loginform" action="/login" method="post"  role="form" class="form">
+                <div class="form-group inputWithIcon">
+                  <label for="email"></label>
+                  <input  id="login-username" type="text"  class="form-control"name="email"  value="" placeholder="Email"  id="email" required>
+
+                  <i class="fa fa-envelope fa-lg " aria-hidden="true"></i>
+                    <p id='result'></p>
+                </divs>
+
+                  <div class="inputWithIcon">
+                  <label for="pwd"></label>
+              <input id="login-password" type="password" class="form-control" name="password" placeholder="Password"  required>
+
+                  <i class="fa fa-lock fa-lg " aria-hidden="true"></i>
+                </div>
+                </div>
+      <!-- login button -->
+        <div class="">
+          <button id="btn-login" href="/auth/thetvdb" class="btn btn-block btn-success">Log in</button>
+        </div>
+         <!-- login button end  -->
+        <br>
+        <div >
+          <p class="bold">Forgot your password? </p>Don't have an account yet?
+          <label class="bold"><a href="signform.html">Sign up</a></label>
+        </p>
+        </div>
+        <div class='hr-or'></div>
+         <!-- login button  -->
+        <div class="form-group">
+          <a href="https://www.facebook.com/" target="_blank" "><button type="button" class="btn btn-primary btn-block fa fa-facebook" > Sign in with Facebook</button></a> <br> <br>
+        <a href="https://www.google.com/" target="_blank" "><button type="button" class="btn btn-danger btn-block fa fa-google-plus"href="/auth/google"> Sign in with Google</button> </a>
+        </div>
+         <!-- login button end  -->
+      </form>
+      </div>
+      </div>
+      </div>
+    </body>
+</html>

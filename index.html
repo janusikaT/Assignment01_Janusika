@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        ShowTrackr
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        function myfunc(name) {
+
+
+
+            $(document).ready(function () {
+
+                $("div").filter(".a1").css("display", "none");
+                $("div").filter("."+name).css("display", "block");
+            });
+
+        }
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-default shadow" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="nav1 navbar-brand" href="index.html" id="show">Show<b>Trackr</b> </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="add.html">Add</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signform.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container center">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link">0-9</a></li>
+                <li class="page-item a"><a class="page-link" id="id1" onclick="myfunc('a')">A</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('b')">B</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('c')">C</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('d')">D</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('e')">E</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('f')">F</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('g')">G</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('h')">H</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('i')">I</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('j')">J</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('k')">K</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('l')">L</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('m')">M</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('n')">N</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('o')">O</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('p')">P</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('q')">Q</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('r')">R</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('s')">S</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('t')">T</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('u')">U</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('v')">V</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('w')">W</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('x')">X</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('y')">Y</a></li>
+                <li class="page-item"><a class="page-link" onclick="myfunc('z')">Z</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <button type="button" class="btn" onclick="myfunc('Action')">Action </button>
+            <button type="button" class="btn" onclick="myfunc('Adventure')">Adventure</button>
+            <button type="button" class="btn" onclick="myfunc('Animation')">Animation</button>
+            <button type="button" class="btn" onclick="myfunc('Children')">Children</button>
+            <button type="button" class="btn" onclick="myfunc('Comedy')">Comedy</button>
+            <button type="button" class="btn" onclick="myfunc('Crime')">Crime</button>
+            <button type="button" class="btn" onclick="myfunc('Documentary')">Documentary</button>
+            <button type="button" class="btn" onclick="myfunc('Drama')">Drama</button>
+            <button type="button" class="btn" onclick="myfunc('Family')">Family</button>
+            <button type="button" class="btn" onclick="myfunc('Fantasy')">Fantasy</button>
+            <button type="button" class="btn" onclick="myfunc('Food')">Food</button>
+            <button type="button" class="btn" onclick="myfunc('Home')">Home and Graden</button>
+            <button type="button" class="btn" onclick="myfunc('Horror')">Horror</button>
+            <button type="button" class="btn" onclick="myfunc('Mini-Series')">Mini-Series</button>
+            <button type="button" class="btn" onclick="myfunc('Mystery')">Mystery</button>
+            <button type="button" class="btn" onclick="myfunc('News')">News</button>
+            <button type="button" class="btn" onclick="myfunc('Reality')">Reality</button>
+            <button type="button" class="btn" onclick="myfunc('Romance')">Romance</button>
+            <button type="button" class="btn" onclick="myfunc('Sci-Fi')">Sci-Fi</button>
+            <button type="button" class="btn" onclick="myfunc('Sport')">Sport</button>
+            <button type="button" class="btn" onclick="myfunc('Suspense')">Suspense</button>
+            <button type="button" class="btn" onclick="myfunc('Talk')">Talk Show</button>
+            <button type="button" class="btn" onclick="myfunc('Thriller')">Thriller</button>
+            <button type="button" class="btn" onclick="myfunc('Travel')">Travel</button>
+        </div>
+    </div>
+    <div class="container" id="container2">
+        <div class="panel">
+            <div class="panel-heading  panel-default" id="head_font">
+                <b>TOP 12 SHOW</b>
+                <div class="pull-right">
+                  <div class="example" action="index.htm" style="margin:auto;max-width:300px">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                </div>
+            </div>
+            <div class="row" id="row">
+                <div class="col-md-3 a1 s Action Children Thriller Adventure Mystery Fantasy Suspense">
+                    <div class="">
+                      <a href="SpyKids.html">
+                          <img class="img-rounded" src="Images/spy.jpg" alt="SpyKids" height="300.73"
+                               width="204.5">
+                          <div class="caption">
+                              <div class="mv">
+                                  <a style="color: #000000;" href="SpyKids.html">
+                                      Spy
+                                      Kids
+                                  </a>
+                              </div>
+                              <p class="text-muted">Episodes: 01</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 a Action Children Thriller Adventure Mystery Animation Sci-Fi Suspense ">
+                    <div class="">
+                        <a href="arrival.html">
+                            <img class="img-rounded" src="Images/arrival.jpeg" height="300.73" width="204.5" alt="arrival">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Arrival</a>
+                                </div>
+                                <p class="text-muted">Episodes: 07</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 k Drama Horror  Documentary Mini-Series Thriller Family">
+                    <div class="">
+                        <a href=" kingdom.html">
+                            <img class="img-rounded" height="300.73" width="204.5" src="Images/kingdom.jpg" alt="team">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">KingDom</a>
+                                </div>
+                                <p class="text-muted">Episodes: 05</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 v Crime Mystery Adventure Sci-Fi Animation Horror Action">
+                    <div class="">
+                        <a href="valerian.html">
+                            <img class="img-rounded" height="300.73" width="204.5" src="Images/valerian.webp" alt="two man">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Valerian</a>
+                                </div>
+                                <p class="text-muted">Episodes: 111</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 d Adventure Travel Fantasy Children Animation Family Homeandgarden Suspense">
+                    <div class="">
+                        <a href="#">
+                            <img class="img-rounded" src="Images/demonslayer.jpeg" alt="Demonslayer" height="300.73"
+                                 width="204.5">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Demonslayer</a>
+                                </div>
+                                <p class="text-muted">Episodes: 14</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 f Fantasy Thriller Sci-Fi Reality Suspense Family Action Comedy">
+                    <div class=" ">
+                        <a href="#">
+                            <img class="img-rounded" height="300.73" width="204.5" src="Images/freeguy.jpg" alt="Freeguy">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Freeguy</a>
+                                </div>
+                                <p class="text-muted">Episodes: 03</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 o Children Adventure Comedy Animation">
+                    <div class="">
+                        <a href="#">
+                            <img class="img-rounded" height="300.73" width="204.5" src="Images/onward.webp"
+                                 alt="Onward">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Onward</a>
+                                </div>
+                                <p class="text-muted">Episodes: 25</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 r Action Adventure Documentary Animation Sci-Fi Thriller  Family">
+                    <div class=" ">
+                        <a href="#">
+                            <img class="img-rounded" height="300.73" width="204.5" src="Images/riseguardians.jpg"
+                                 alt="Rise_guardians">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Rise_guardians</a>
+                                </div>
+                                <p class="text-muted">Episodes: 04</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 t Horror Thriller Adventure Travel Food">
+                    <div class="">
+                        <a href="#">
+                            <img class="img-rounded" src="Images/within.jpg" alt="half_face" height="300.73" width="204.5">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">The Road Within</a>
+                                </div>
+                                <p class="text-muted">Episodes: 10</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 f Children Animation Family Fantasy Documentary Food">
+                    <div class="">
+                        <a href="#">
+                            <img class="img-rounded" src="Images/foodfight.jpg" alt="Food_Fight" height="300.73" width="204.5">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Food_Fight</a>
+                                </div>
+                                <p class="text-muted">Episodes: 02</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 i Thriller Horror Romance">
+                    <div class="">
+                        <a href="#">
+                            <img class="img-rounded" src="Images/follow.jpg" alt="Horror" height="300.73" width="204.5">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">I will Follow you in to the Dark night</a>
+                                </div>
+                                <p class="text-muted">Episodes: 03</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 a1 l Action Adventure Sci-Fi Reality News">
+                    <div class="">
+                        <a href="#">
+                            <img class="img-rounded" src="Images/steel.jpeg" alt="girl_face" height="300.73"
+                                 width="204.5">
+                            <div class="caption">
+                                <div class="mv">
+                                    <a style="color: #000000;" href="#">Bleeding_Steel</a>
+                                </div>
+                                <p class="text-muted">Episodes: 05</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+      <p>Movie Download....</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+body{
+  background-color:	#c8d6e5;
+}
+.panel{
+  margin:5% 35%;
+}
+.bold{
+  font-weight: bold;
+}
+.center{
+  text-align:center;
+}
+.form{
+  margin:10px 20px;
+}
+
+.input input{
+ padding-left: 40px;
+}
+.input{
+ position: relative;
+}
+.input i{
+ position: absolute;
+ left: 3px;
+ top: 22px;
+ padding: 9px 8px;
+ color: #666;
+ transition:  .3s;
+}
+
+/*  NAV BAR CSS  */
+#brand{
+  background-color: #ffe939;
+  transition: .25s all;
+  font-weight: bold;
+  color: #333;
+}
+#brand:hover{
+  background-color: #333;
+  color: #ffe939;
+}
+#nav:hover{
+  background-color: #333;
+  color: #ffe939;
+}
+#active{
+  background-color: rgb(91, 192, 222);
+  font-weight: bold;
+  color:#f1c40f;
+}
+#active:hover{
+  background-color: #333;
+  color: #ffe939;
+}
+
+#navbar{
+  border-radius: 0;
+
+}
+#navbar a{
+  font-weight: bold;
+  color: #333;
+}
+.btn{
+  width: 300px;
+  height: 40px;
+  border-radius: 0;
+  margin-top: 10px;
+}
+.form-group input{
+  border-radius: 0;
+  height: 40px;
+}
+</style>
+</head>
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar navbar-default" id="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" id="brand" href="/">ShowTrackr</a>
+      </div>
+        <ul class="nav navbar-nav">
+          <li ><a href="index.html"  id="nav">Home</a></li>
+          <li class="dropdown"><a href="add.html" id="nav">Add </a>  </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html"  id="nav">Login</a></li>
+          <li><a href="signform.html" id="active">Signup</a></li>
+        </ul>
+    </div>
+  </nav>
+
+<!-- nav bar end -->
+<!-- information  username ,mail-->
+<div class="container center">
+  <div class="panel panel-default "id="loginbox">
+    <h2 class="panel-body bold">Sign Up</h2>
+
+      <form action="/signup" method="post" name="myForm" class="form">
+        <div class="form-group ">
+       <div id="form">
+        <div class="input ">
+          <label for="name"></label>
+          <input onmouseenter="return myFunction1()" required id="login-username" type="text" oninput="return validateForm()" name="username" value=""  class="form-control " title="Username must have alphabet characters only" placeholder="Name"  >
+          <i class="glyphicon glyphicon-user"></i>
+             <div class="msgname" style="color:red" id="demo"></div>
+        </div>
+</div>
+
+<div class="form-group input">
+  <label for="email"></label>
+  <input onmouseenter="return myFunction()"  required id="login-email" type="email" class="form-control"name="email"value="" placeholder="Email"        oninput="return email_validate()"   >
+
+  <i class="fa fa-envelope fa-lg " aria-hidden="true"></i>
+       <div class="msgemail" style="color:red" id="status"></div>
+</div>
+      <div class="input">
+        <label for="pwd"></label>
+          <input onmouseenter="return myFunction2()" id="login-password" type="password"class="form-control"  name="password"  placeholder="Password"           oninput="return validatePassword()" title=" at least 8 or more characters" required>
+          <i class="fa fa-lock fa-lg " aria-hidden="true"></i> <div class="msgpass" style="color:red" id="pass"></div>
+      </div>
+        <br>
+        <div > By clicking on Sign up, you agree in <a class="bold">terms & conditions </a>and <a class="bold"> privacy policy</a>     </div>
+              <button href="" class="btn btn-block btn-info">Sign Up</button>
+        </form><br>
+
+        <div>
+        Already have an account? <a class="bold" href="login.html">Login now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+<!--Form Validation -->
+    function email_validate() {
+      var Regmail =  /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
+        var x = document.getElementById("login-email");
+
+          if (Regmail.test(x) == false) {
+            document.getElementById('status').innerHTML="Email address is not valid .";
+            document.getElementById('status').style.color = 'red';
+            }else {
+            document.getElementById('status').innerHTML=" you have entered a valid Email address!"
+            document.getElementById('status').style.color = 'green';
+             }
+         }
+
+
+     function validateForm() {
+      var Regname = /^([a-zA-z\s]{5,32})$/ ;
+        var y = document.getElementById("login-username");
+          if (Regname.test(y) == false) {
+            document.getElementById('demo').innerHTML="Name must be 5 Characters & No Numbers";
+            document.getElementById('demo').style.color='red'
+            }else {
+            document.getElementById('demo').innerHTML="Valid User name"
+            document.getElementById('demo').style.color = 'green';
+             }
+         }
+
+
+      function validatePassword() {
+        var Regpass = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8}$/;
+        var z = document.getElementById("login-password");
+            if(Regpass.test(z) == false)
+            {
+            document.getElementById('pass').innerHTML="Password must contain at least one capital case, one simple case, one number, one symbol and should be exactly 8 characters long.";
+            document.getElementById('pass').style.color = 'red';
+            }else {
+            document.getElementById('pass').innerHTML="Valid Password"
+            document.getElementById('pass').style.color = 'green';
+            }
+          }
+
+
+    function myFunction() {
+      var empInput =  /^(?![\s\S])/;
+        var a = document.getElementById("login-email");
+          if (empInput.test(a) !== false){
+          var x = document.getElementsByClassName("email");
+          x[0].innerHTML ="Email required...!!";
+          return false;
+           };
+          }
+
+      function myFunction1() {
+        var empInput =  /^(?![\s\S])/;
+          var b=  document.getElementById("login-username");
+            if (empInput.test(b) !== false){
+              var x = document.getElementsByClassName("name");
+                 x[0].innerHTML ="Name required...!!";
+                  return false;
+                 };
+               }
+
+    function myFunction2() {
+      var empInput =  /^(?![\s\S])/;
+        var c = document.getElementById("login-password");
+          if (empInput.test(c) !== false){
+          var x = document.getElementsByClassName("pass");
+          x[0].innerHTML ="Password required...!!";
+          return false;
+            };
+
+
+
+ <!-- 5 users-->
+ var user1={
+     email:"Janu1@gmail.com",
+     pwd:"21Janu"
+ };
+ var user2={
+     email:"Janu2@gmail.com",
+     pwd:"16Janu"
+ };
+ var user3={
+     email:"Janu3@gmail.com",
+     pwd:"15Janu"
+ };
+ var user4={
+     email:"Janu4@gmail.com",
+     pwd:"17Janu"
+ };
+ var user5={
+     email:"Janu5@gmail.com",
+     pwd:"05Janu"
+ };
+ var userList=[user1,user2,user3,user4,user5];
+
+
+ function login() {
+    var email=document.getElementById("login-email").value;
+    var pwd=document.getElementById("login-password").value;
+    for(var j=0; j<5; j++){
+        if(login-email==userList[j]['email'] && login-password==userList[j]['pwd']){
+            return alert('Successfully');
+        }
+    }
+    alert('Invalid input');
+ }
+</script>
+</body>
+</html>

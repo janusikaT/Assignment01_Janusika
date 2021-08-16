@@ -1,0 +1,103 @@
+.head1{
+          background-color:#c8d6e5;
+        }
+        body{
+        background-color: #c8d6e5;
+        }
+        .panel{
+          margin:5% 35%;
+        }
+        .bold{
+          font-weight: bold;
+        }
+        .center{
+          text-align:center;
+          background-color: #c8d6e5
+        }
+        .form{
+          margin:10px 20px;
+
+        }
+        
+        .inputWithIcon input{
+         padding-left: 40px;
+        }
+        .inputWithIcon{
+         position: relative;
+        }
+        .inputWithIcon i{
+         position: absolute;
+         left: 3px;
+         top: 22px;
+         padding: 9px 8px;
+         color: #666;
+         transition:  .3s;
+        }
+        /*  NAV BAR CSS  */
+        #brand{
+          background-color: #ffe939;
+          transition: .25s all;
+          font-weight: bold;
+          color: #333;
+        }
+        #brand:hover{
+          background-color: #333;
+          color: #ffe939;
+        }
+        #nav:hover{
+          background-color: #333;
+          color: #ffe939;
+        }
+        #active{
+          background-color: rgb(91, 192, 222);
+          font-weight: bold;
+          color:#f1c40f;
+        }
+        #active:hover{
+          background-color: #333;
+          color: #ffe939;
+        }
+
+        #navbar{
+          border-radius: 0;
+
+        }
+        #navbar a{
+          font-weight: bold;
+          color: #333;
+        }
+        .btn{
+          border-radius: 0;
+          height: 40px;
+          font-weight: bold;
+        }
+        #loginform input {
+          height: 40px;
+          border-radius: 0;
+        }
+        .fa-twitter{
+          background-color:  #38A1F3;
+          color: white;
+        }
+        div.hr-or {
+            width:90%;
+            margin:0px auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            height: 0px;
+            line-height: 0px;
+
+        }
+
+            div.hr-or:before {
+                content: 'or';
+                background-color: #fff;
+                font-size: 13px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bolder;
+                color: #000000;
+                border: 4px solid transparent;
+            }
